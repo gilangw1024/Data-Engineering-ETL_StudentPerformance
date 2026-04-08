@@ -1,4 +1,4 @@
-# 🚀 Student Performance ETL Pipeline (Dockerized)
+# Student Performance ETL Pipeline (Dockerized)
 
 Proyek ini adalah pipeline **ETL (Extract, Transform, Load)** sederhana yang dirancang untuk mengolah data performa siswa dari file CSV mentah ke dalam database PostgreSQL yang ter-kontainerisasi menggunakan Docker.
 
@@ -15,9 +15,17 @@ Proyek ini adalah pipeline **ETL (Extract, Transform, Load)** sederhana yang dir
    - Pembersihan data spasi pada teks.
 3. **Load:** Mengirimkan data yang telah bersih ke tabel `student_performance` di PostgreSQL secara otomatis.
 
-## 🚀 Cara Menjalankan (Local Setup)
+## Cara Menjalankan (Local Setup)
 
 1. **Clone Repository:**
    ```bash
    git clone [https://github.com/gilangw1024/Data-Engineering-ETL_StudentPerformance.git](https://github.com/gilangw1024/Data-Engineering-ETL_StudentPerformance.git)
    cd Data-Engineering-ETL_StudentPerformance
+
+.
+├── data/               # Folder file CSV mentah
+├── pipeline.py         # Script utama Python ETL
+├── Dockerfile          # Instruksi build image Python
+├── docker-compose.yml  # Konfigurasi container DB dan App
+├── requirements.txt    # Library dependencies
+└── .env                # (Hidden) Kredensial database
