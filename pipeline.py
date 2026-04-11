@@ -16,7 +16,7 @@ def run_pipeline():
 
     try:
         print("--- Memulai Extract ---")
-        df = pd.read_csv('/app/data/source.csv')
+        df = pd.read_csv('/data/source.csv')
         
         print("--- Memulai Transform ---")
         # Contoh: Bersihkan nama kolom agar tidak ada spasi (penting untuk SQL)

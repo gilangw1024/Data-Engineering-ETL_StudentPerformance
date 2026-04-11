@@ -21,7 +21,7 @@ services:
       # etl_app tetap pakai 5432 karena dia bicara lewat jaringan internal Docker
       POSTGRES_PORT: 5432 
     volumes:
-      - ./data:/app/data
+      - ./data:/data
     depends_on:
       - db
 
